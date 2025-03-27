@@ -2,7 +2,8 @@ import streamlit as st
 import openai
 
 # Set your API key here
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
 
 st.set_page_config(page_title="Wudless Chatbot", page_icon="🤖")
 
